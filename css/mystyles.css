@@ -1,0 +1,104 @@
+/* Global Styles */
+*, *:before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/*
+font-family: 'Comfortaa', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Noto Sans SC', sans-serif;
+*/
+:root {
+  --dkblue:#101B37;
+  --neonpink:#E41376;
+  --neonblue: #01C8EE;
+}
+
+.cfta {
+  font-family: 'Comfortaa', cursive;
+}
+
+.nsjp {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.nssc {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.3;
+  background-color: var(--dkblue);
+  color: #ffffff;
+}
+
+div {
+  border-radius: 15px;
+  line-height: 40px;
+  height: 100px auto;
+  /* border: 2px dashed #f69c55; */
+}
+
+h3 {
+  margin: 10px;
+}
+
+.purple {
+  height: 100px;
+  background-color: purple;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(purple), to(#d506f0));
+  background-image: linear-gradient(purple, #d506f0);
+}
+
+.green {
+  height: 100px;
+  background-color: green;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(green), to(#159111));
+  background-image: linear-gradient(green, #159111);
+}
+
+.blue {
+  height: 100px;
+  background-color: blue;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#361b96));
+  background-image: linear-gradient(blue, #361b96);
+}
+
+/*# sourceMappingURL=mystyles.css.map */
+.grid-child-blue, .grid-child-red {
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.grid-child-blue {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.grid-child-red {
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 56.25em){
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+}
+
